@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sign up</title>
+</head>
+<body>
+    <div class="side-panel">
+        <div class="img-holder">
+            <img src=".\odin-lined.png">
+            <h1 class="logo-text">Odin cloud</h1>
+        </div>
+        <p id="photo-tag">Photo by <a href="https://unsplash.com/@joshuafuller?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joshua Fuller</a> on <a href="https://unsplash.com/s/photos/violet?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+    </div>
+        <div class="main-panel">
+        <h2>Sign up pls ;_;</h2>
+        <form action="./handler.php" method="post">
+            <fieldset>
+                <div class="input-container">
+                    <label for="name">First name</label>
+                    <input type="text" name="name"id="name">
+                </div>
+                <div class="input-container">
+                    <label for="surname">Last name</label>
+                    <input type="text" name="surname"id="surname">
+                </div>
+            </fieldset> 
+
+            <fieldset>
+                <div class="input-container">
+                    <label for="email">Email</label>
+                    <input type="email" name="email"id="email">
+                </div>
+                <div class="input-container">
+                    <label for="phone">Phone number</label>
+                    <input type="phone" name="phone"id="phone">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="input-container">
+                    <label for="password">Password</label>
+                    <input type="password" name="password"id="password" minlength="6">
+                </div>
+                <div class="input-container">
+                    <label for="password-confirm">Confirm password</label>
+                    <input type="password" name="password-confirm"id="password-confirm" minlength="6">
+                </div>
+            </fieldset>
+            <button type="submit">Create account</button>
+            <p>Already have an account? <a href="/">Log in</a></p>
+        </form>
+        
+    </div>
+</body>
+</html>
